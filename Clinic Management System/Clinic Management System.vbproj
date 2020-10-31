@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3DA9E86-E154-4D41-8EEB-F555E06C5A0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Clinic_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Clinic_Management_System</RootNamespace>
+    <AssemblyName>Clinic Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSettingsForm.Designer.vb">
+      <DependentUpon>AccountSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFindingsForm.Designer.vb">
+      <DependentUpon>AddFindingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddFindingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedicineForm.Designer.vb">
+      <DependentUpon>AddMedicineForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicineForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedStockForm.Designer.vb">
+      <DependentUpon>AddMedStockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedStockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicMgtDbDataSet.vb">
+      <DependentUpon>ClinicMgtDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorMenuForm.Designer.vb">
+      <DependentUpon>DoctorMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMedicineForm.Designer.vb">
+      <DependentUpon>EditMedicineForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditMedicineForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseMedicineForm.Designer.vb">
+      <DependentUpon>ReleaseMedicineForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseMedicineForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMedicineReleases.Designer.vb">
+      <DependentUpon>ViewMedicineReleases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMedicineReleases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMedicineStock.Designer.vb">
+      <DependentUpon>ViewMedicineStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMedicineStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuForm.Designer.vb">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicMgtDbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicMgtDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatientForm.Designer.vb">
+      <DependentUpon>AddPatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPatientForm.Designer.vb">
+      <DependentUpon>EditPatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditPatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AddRecordForm.Designer.vb">
+      <DependentUpon>AddRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWMenuForm.Designer.vb">
+      <DependentUpon>SWMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SWMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewExistingPatient.Designer.vb">
+      <DependentUpon>ViewExistingPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewExistingPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMedicinesForm.Designer.vb">
+      <DependentUpon>ViewMedicinesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMedicinesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPatientRecord.Designer.vb">
+      <DependentUpon>ViewPatientRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPatientRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitListForm.Designer.vb">
+      <DependentUpon>WaitListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccountSettingsForm.resx">
+      <DependentUpon>AccountSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFindingsForm.resx">
+      <DependentUpon>AddFindingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedicineForm.resx">
+      <DependentUpon>AddMedicineForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedStockForm.resx">
+      <DependentUpon>AddMedStockForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorMenuForm.resx">
+      <DependentUpon>DoctorMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMedicineForm.resx">
+      <DependentUpon>EditMedicineForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseMedicineForm.resx">
+      <DependentUpon>ReleaseMedicineForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMedicineReleases.resx">
+      <DependentUpon>ViewMedicineReleases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMedicineStock.resx">
+      <DependentUpon>ViewMedicineStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatientForm.resx">
+      <DependentUpon>AddPatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuForm.resx">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPatientForm.resx">
+      <DependentUpon>EditPatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRecordForm.resx">
+      <DependentUpon>AddRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWMenuForm.resx">
+      <DependentUpon>SWMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewExistingPatient.resx">
+      <DependentUpon>ViewExistingPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMedicinesForm.resx">
+      <DependentUpon>ViewMedicinesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPatientRecord.resx">
+      <DependentUpon>ViewPatientRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitListForm.resx">
+      <DependentUpon>WaitListForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClinicMgtDbDataSet.xsc">
+      <DependentUpon>ClinicMgtDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicMgtDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicMgtDbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicMgtDbDataSet.xss">
+      <DependentUpon>ClinicMgtDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLogoutHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLogoutClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExitClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExitHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNotViewPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNotViewPassClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNotViewPassHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewPassClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewPassHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUpdateInfoClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUpdateInfoHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUpdateInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddCheckup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddCheckupClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddCheckupHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnWaitListClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnWaitListHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnWaitList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatientClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatientHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExistPatient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExistPatientClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExistPatientHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBackClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBackHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBrowsePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBrowsePicClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBrowsePicHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditPatient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditPatientClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditPatientHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatientsClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddPatientsHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAccSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAccSettingsClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAccSettingsHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedStorageClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedStorageHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedReleases.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedReleasesClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMedReleasesHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddMedicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddMedicineClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddMedicineHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewStockClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnViewStockHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddStockClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddStockHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditMedicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditMedicineClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditMedicineHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSkip.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
